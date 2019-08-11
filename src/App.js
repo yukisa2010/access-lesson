@@ -1,24 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  var mail = 'mailto:yukisa2010@gmail.com'
+  mail = mail + '?subject=Excel・Accessレッスンのお問合せ'
+  mail = mail + '&body=【希望場所（複数可）】%0D%0A【希望時間帯（複数可）】%0D%0A【教えてもらいたいこと】'
+  
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Excel・Access 教えます</h1>
+      <div className='contents-wrapper'>
+        <p>エクセルの本をそろえても、入力、関数を検索しても使いこなせないのは理由があります。</p>
+        <p>こんなことはありませんか？</p>
+        <p>ネットで検索した関数を何度試しても、エラーになってしまう。</p>
+        <p>先月、本で読んだピボットテーブルが、今月はなぜか集計できない。</p>
+        <p>グラフ作成の入力にも保存にも時間がかかってしまう。</p>
+        <p>それは、なぜでしょう？</p>
+        <p>それは、エクセルが難しいからでも、あなたが入力や関数の使い方を知らないからでもありません。</p>
+        <p>それは、エクセルがあなた専用に作られていないからです。</p>
+        <p>エクセルは、ひとつの機能でも、いくつもの操作方法があります。</p>
+        <p>その中から、あなたにとっての最適な方法を選び出すことが難しいのです。</p>
+        <p>だから、ルーティン業務でもエクセルでなかなか自動化されず、</p>
+        <p>担当者が急に変わると、業務量が変わると、効率性が下がってしまうのです。</p>
+        <p>それが、もしエクセルが、あなたの言うとおりにワンクリックで、サクサク動いたらどうでしょう？</p>
+        <p>そんなあなたにExcel・Accessを教えます</p>
+        <p>たとえば、以下のようなことを教えられます</p>
+        <ul>
+          <li>ファイル・フォルダのディレクトリ操作・リネーム作業の自動化</li>
+          <li>Excel⇔Accessの連携、SQLを用いた顧客登録システムの構築</li>
+          <li>IE操作を用いた簡単なWebスクレイピング、入力作業の自動化</li>
+          <li>ピボットテーブル・Accessクエリによる集計業務の自動化</li>
+          <li>※あくまで一例です。受講者様のレベルに応じて課題などを提供しながらお教えします</li>
+        </ul>
+        <p>があります。</p>
+        <p>【料金】5000円/2時間～</p>
+        <p>【場所】都内のどこか(お互いに近い場所：ファミレスなど)</p>
+        <p>お問い合わせは無料です。</p>
+        <a href={mail} id='email'>お問合せはコチラ</a>
+      </div>
     </div>
   );
 }
